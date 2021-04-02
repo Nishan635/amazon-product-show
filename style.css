@@ -1,14 +1,19 @@
 body {
 	border: 0px;
 	padding: 0px;
+  position: relative;
+  background-color: rgba(0,0,0,0.6);
 }
 
 .heading {
   text-align: center;
-  margin-bottom: 40px;
+  margin: 60px 0px 0px 0px;
+  color: white;
+  font-family: arial;
 }
 
 .container {
+  margin-top: 60px;
 	display: flex;
 	justify-content: space-around;
 }
@@ -19,9 +24,6 @@ body {
 	cursor: pointer;
 }
 
-.single-img img:hover {
-	border: 3px solid orange;
-}
 
 .single-img img {
 	width: 100%;
@@ -32,7 +34,7 @@ body {
   width: 700px;
   height: 400px;
   overflow:hidden;
-  box-shadow: 0px 0px 4px #333;
+  box-shadow: 0px 0px 4px white;
   position: relative;
 }
 #magnifying_area img{
@@ -48,9 +50,33 @@ body {
 .my {
   width: 400px;
   height: 200px;
-  box-shadow: 0px 0px 4px #333;
+  box-shadow: 0px 0px 4px rgba(0,0,0,0.8);
 }
 
 .my img {
   width: 100%;
+}
+.mess {
+  display: none;
+}
+
+
+@media screen and (max-width: 880px) {
+  .heading,
+  .container {
+    display: none;
+  }
+
+
+  .mess {
+    font-size: 25px;
+    color: white;
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -100px;
+    font-family: arial;
+  }
 }

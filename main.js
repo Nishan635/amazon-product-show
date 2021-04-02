@@ -13,6 +13,63 @@ singleImg.forEach((item) => {
 	})
 })
 
+singleImg[0].addEventListener('mouseover', () => {
+  singleImg[0].style.border = '3px solid orange';
+  singleImg[1].style.border = 'none';
+  singleImg[2].style.border = 'none';
+  singleImg[3].style.border = 'none';
+  singleImg[4].style.border = 'none';
+  singleImg[5].style.border = 'none';
+
+})
+singleImg[1].addEventListener('mouseover', () => {
+  singleImg[0].style.border = 'none';
+  singleImg[1].style.border = '3px solid orange';
+  singleImg[2].style.border = 'none';
+  singleImg[3].style.border = 'none';
+  singleImg[4].style.border = 'none';
+  singleImg[5].style.border = 'none';
+
+})
+singleImg[2].addEventListener('mouseover', () => {
+  singleImg[0].style.border = 'none';
+  singleImg[1].style.border = 'none';
+  singleImg[2].style.border = '3px solid orange';
+  singleImg[3].style.border = 'none';
+  singleImg[4].style.border = 'none';
+  singleImg[5].style.border = 'none';
+
+})
+singleImg[3].addEventListener('mouseover', () => {
+  singleImg[0].style.border = 'none';
+  singleImg[1].style.border = 'none';
+  singleImg[2].style.border = 'none';
+  singleImg[3].style.border = '3px solid orange';
+  singleImg[4].style.border = 'none';
+  singleImg[5].style.border = 'none';
+
+})
+singleImg[4].addEventListener('mouseover', () => {
+  singleImg[0].style.border = 'none';
+  singleImg[1].style.border = 'none';
+  singleImg[2].style.border = 'none';
+  singleImg[3].style.border = 'none';
+  singleImg[4].style.border = '3px solid orange';
+  singleImg[5].style.border = 'none';
+
+})
+singleImg[5].addEventListener('mouseover', () => {
+  singleImg[0].style.border = 'none';
+  singleImg[1].style.border = 'none';
+  singleImg[2].style.border = 'none';
+  singleImg[3].style.border = 'none';
+  singleImg[4].style.border = 'none';
+  singleImg[5].style.border = '3px solid orange';
+
+})
+
+
+
 
 
 
@@ -29,7 +86,8 @@ var magnifying_area =  document.querySelector('.my');
     clientY = clientY / mHeight * 100
 
   //magnifying_img.style.transform = 'translate(-50%,-50%) scale(2)'
-  magnifying_img.style.transform = 'translate(-'+clientX+'%, -'+clientY+'%) scale(2)'
+  magnifying_img.style.transform = 'translate(-'+clientX+'%, -'+clientY+'%) scale(2)';
+
 })
 
    magnifying_area.addEventListener("mouseleave",function(){
