@@ -1,3 +1,8 @@
+const loder = document.querySelector('.loader-wrapper');
+window.addEventListener('load', () => {
+  loder.style.display = 'none';
+})
+
 const singleImg = document.querySelectorAll('.single-img img');
 var magnifying_img =  document.getElementById("magnifying_img");
 
